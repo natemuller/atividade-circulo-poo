@@ -3,10 +3,14 @@ public class Circulo {
     double eixoX;
     double eixoY;
     double raio;
-    double area = Math.PI * Math.pow(raio, 2);
-    double comprimentoCircunferencia = 2 * Math.PI * raio;
+    double area = (Math.PI * Math.pow(raio, 2));
+    double comprimentoCircunferencia = (2 * Math.PI * raio);
 
     public Circulo(double eixoX, double eixoY, double raio, double area, double comprimentoCircunferencia) {
+
+        if (eixoX < 0 || eixoY < 0 || raio < 0) 
+            System.out.println("Valores negativos sao invalidos.");
+            
         this.eixoX = eixoX;
         this.eixoY = eixoY;
         this.raio = raio;
