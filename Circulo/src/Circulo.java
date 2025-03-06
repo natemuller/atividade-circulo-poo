@@ -1,5 +1,49 @@
 public class Circulo {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+    double eixoX;
+    double eixoY;
+    double raio;
+    double area = Math.PI * Math.pow(raio, 2);
+    double comprimentoCircunferencia = 2 * Math.PI * raio;
+
+    public Circulo(double eixoX, double eixoY, double raio, double area, double comprimentoCircunferencia) {
+        this.eixoX = eixoX;
+        this.eixoY = eixoY;
+        this.raio = raio;
+        this.area = area;
+        this.comprimentoCircunferencia = comprimentoCircunferencia;
     }
+
+    public double getEixoX() {
+        return eixoX;
+    }
+
+    public double getEixoY() {
+        return eixoY;
+    }
+
+    public double getRaio() {
+        return raio;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public double getComprimentoCircunferencia() {
+        return comprimentoCircunferencia;
+    }
+
+    public void setEixoX(double novoEixoX) {
+        this.eixoX = novoEixoX;
+    }
+
+    public void setEixoY(double novoEixoY) {
+        this.eixoY = novoEixoY;
+    }
+
+    public void setRaio (double novoRaio) {
+        this.raio = novoRaio;
+    }
+
 }
